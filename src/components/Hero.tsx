@@ -27,7 +27,7 @@ const Hero = () => {
           
           <p className="text-lg text-gray-600 mb-8 max-w-xl">
             Join innovators, builders, and creators from around the world to push the boundaries 
-            of what's possible with Airtable. Build, learn, and win amazing prizes!
+            of what's possible with Airtable. Build, learn, and win exciting rewards!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">

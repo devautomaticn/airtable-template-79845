@@ -16,7 +16,7 @@ const Footer = () => {
               <span className="font-bold text-lg text-airtable-black">Airtable Template</span>
             </div>
             <p className="text-gray-600 text-sm mb-6 max-w-md">
-              Join innovators, builders, and creators from around the world to push the boundaries of what's possible with Airtable. Build, learn, and win amazing prizes!
+              Join innovators, builders, and creators from around the world to push the boundaries of what's possible with Airtable. Build, learn, and win exciting rewards!
             </p>
           </div>
         </div>
