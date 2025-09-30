@@ -22,12 +22,12 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="lg:w-1/2 pt-12 lg:pt-20 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-airtable-black leading-tight tracking-tight mb-6">
-            Build Anything with <span className="text-airtable-blue">Airtable</span> Templates
+            The First <span className="text-airtable-blue">Airtable</span> Community Led Hackathon!
           </h1>
           
           <p className="text-lg text-gray-600 mb-8 max-w-xl">
-            Kickstart your workflow with our curated collection of premium Airtable templates.
-            Save time, stay organized, and accomplish more.
+            Join innovators, builders, and creators from around the world to push the boundaries 
+            of what's possible with Airtable. Build, learn, and win amazing prizes!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -35,14 +35,21 @@ const Hero = () => {
               className="bg-airtable-blue hover:bg-airtable-blue/90 text-white px-8 py-6 rounded-md text-base"
               onClick={scrollToTemplates}
             >
-              Browse Templates
+              Register Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <a href="https://automaticnation.com/book-a-call" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="border-airtable-blue text-airtable-blue hover:bg-airtable-blue/5 px-8 py-6 rounded-md text-base">
-                Learn More
-              </Button>
-            </a>
+            <Button 
+              variant="outline" 
+              className="border-airtable-blue text-airtable-blue hover:bg-airtable-blue/5 px-8 py-6 rounded-md text-base"
+              onClick={() => {
+                const detailsSection = document.getElementById('hackathon-details');
+                if (detailsSection) {
+                  detailsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              Learn More
+            </Button>
           </div>
           
           <div className="flex items-center mt-12">
@@ -51,15 +58,15 @@ const Hero = () => {
                 <div key={i} className="h-10 w-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center overflow-hidden">
                   <img 
                     src={`https://i.pravatar.cc/100?img=${i+10}`} 
-                    alt="User avatar" 
+                    alt="Participant avatar" 
                     className="h-full w-full object-cover"
                   />
                 </div>
               ))}
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-900">500+ downloads</p>
-              <p className="text-xs text-gray-500">Trusted by hundreds</p>
+              <p className="text-sm font-medium text-gray-900">200+ Registered</p>
+              <p className="text-xs text-gray-500">Join the community</p>
             </div>
           </div>
         </div>
@@ -72,10 +79,10 @@ const Hero = () => {
               className="rounded-xl w-full h-auto object-cover"
             />
             <div className="absolute top-6 right-6 bg-airtable-pink text-white text-xs font-bold px-3 py-1 rounded-full">
-              Popular
+              48h Challenge
             </div>
             <div className="absolute top-6 left-6 bg-airtable-blue text-white text-xs font-bold px-3 py-1 rounded-full">
-              Project Management
+              Build & Win
             </div>
           </div>
           

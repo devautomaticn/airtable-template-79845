@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { Menu, X, Upload } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -51,17 +51,22 @@ const Navbar = () => {
             Home
           </Link>
           <button 
-            onClick={scrollToTemplates}
+            onClick={() => {
+              const detailsSection = document.getElementById('hackathon-details');
+              if (detailsSection) {
+                detailsSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors"
           >
-            Templates
+            Details
           </button>
-          <Link to="/submit-template">
-            <Button className="bg-airtable-pink hover:bg-airtable-pink/90 text-white border-none">
-              <Upload className="h-4 w-4 mr-2" />
-              Submit Template
-            </Button>
-          </Link>
+          <Button 
+            onClick={scrollToTemplates}
+            className="bg-airtable-pink hover:bg-airtable-pink/90 text-white border-none"
+          >
+            Register Now
+          </Button>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -82,16 +87,25 @@ const Navbar = () => {
             </Link>
             <button 
               onClick={() => {
+                const detailsSection = document.getElementById('hackathon-details');
+                if (detailsSection) {
+                  detailsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+                setIsMobileMenuOpen(false);
+              }}
+              className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2 text-left"
+            >
+              Details
+            </button>
+            <button 
+              onClick={() => {
                 scrollToTemplates();
                 setIsMobileMenuOpen(false);
               }}
               className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2 text-left"
             >
-              Templates
+              Register Now
             </button>
-            <Link to="/submit-template" className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2">
-              Submit Template
-            </Link>
           </nav>
         </div>
       )}

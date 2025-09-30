@@ -1,135 +1,173 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
-import TemplateCard from '@/components/TemplateCard';
-import { fetchPublishedTemplates } from '@/services/templateService';
-import { useQuery } from '@tanstack/react-query';
-import { toast } from 'sonner';
-import { Badge } from '@/components/ui/badge';
-import { Template } from '@/types/template';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Trophy, Users, Zap, Gift, Code } from 'lucide-react';
 
 const Index = () => {
-  const { data: templates, isLoading, error } = useQuery({
-    queryKey: ['publishedTemplates'],
-    queryFn: fetchPublishedTemplates,
-    retry: 2
-  });
-
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [categories, setCategories] = useState<string[]>([]);
-  const [filteredTemplates, setFilteredTemplates] = useState<Template[]>([]);
-
-  useEffect(() => {
-    if (templates) {
-      // Extract unique categories
-      const uniqueCategories = Array.from(new Set(templates.map(t => t.category)));
-      setCategories(uniqueCategories);
-
-      // Filter templates based on selected category
-      if (selectedCategory) {
-        setFilteredTemplates(templates.filter(t => t.category === selectedCategory));
-      } else {
-        setFilteredTemplates(templates);
-      }
-    }
-  }, [templates, selectedCategory]);
-
-  const handleCategoryClick = (category: string) => {
-    setSelectedCategory(prev => prev === category ? null : category);
-  };
-
-  if (error) {
-    console.error("Error loading templates:", error);
-    toast.error("Failed to load templates. Please try again later.");
-  }
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <Hero />
       
-      <section id="browse-templates" className="py-20 px-6 md:px-12 bg-gray-50">
+      {/* About Section */}
+      <section id="hackathon-details" className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">Browse All Templates</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Why Join the Hackathon?</h2>
+          <p className="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+            This is your chance to showcase your creativity, learn new skills, and connect with 
+            the global Airtable community. Whether you're a beginner or expert, there's a place for you!
+          </p>
           
-          {/* Category Filters */}
-          {!isLoading && templates && templates.length > 0 && (
-            <div className="flex flex-wrap gap-2 justify-center mb-12">
-              {categories.map((category) => (
-                <Badge 
-                  key={category}
-                  variant={selectedCategory === category ? "default" : "outline"}
-                  className={`px-3 py-1 text-xs cursor-pointer hover:bg-airtable-blue/90 transition-all ${
-                    selectedCategory === category 
-                      ? 'bg-airtable-blue text-white' 
-                      : 'bg-white text-gray-700 hover:text-white'
-                  }`}
-                  onClick={() => handleCategoryClick(category)}
-                >
-                  {category}
-                </Badge>
-              ))}
-              {selectedCategory && (
-                <Badge 
-                  variant="outline"
-                  className="px-2 py-1 text-xs cursor-pointer bg-gray-100 text-gray-700 hover:bg-gray-200"
-                  onClick={() => setSelectedCategory(null)}
-                >
-                  Clear Filter
-                </Badge>
-              )}
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-airtable-blue/20 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Trophy className="h-10 w-10 text-airtable-blue mb-2" />
+                <CardTitle>Amazing Prizes</CardTitle>
+                <CardDescription>Win cash prizes, swag, and exclusive opportunities</CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="border-airtable-pink/20 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-10 w-10 text-airtable-pink mb-2" />
+                <CardTitle>Community</CardTitle>
+                <CardDescription>Connect with builders and innovators worldwide</CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="border-airtable-yellow/20 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Code className="h-10 w-10 text-airtable-yellow mb-2" />
+                <CardTitle>Learn & Build</CardTitle>
+                <CardDescription>Expand your skills and create something amazing</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20 px-6 md:px-12 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Event Timeline</h2>
           
-          {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="bg-white rounded-xl shadow-soft h-[380px] animate-pulse">
-                  <div className="w-full h-40 bg-gray-200 rounded-t-xl"></div>
-                  <div className="p-5 space-y-3">
-                    <div className="h-4 bg-gray-200 rounded w-1/4"></div>
-                    <div className="h-6 bg-gray-200 rounded w-3/4"></div>
-                    <div className="h-4 bg-gray-200 rounded w-full"></div>
-                    <div className="h-4 bg-gray-200 rounded w-2/3"></div>
-                    <div className="flex justify-between mt-4">
-                      <div className="h-8 bg-gray-200 rounded w-1/3"></div>
-                      <div className="h-8 bg-gray-200 rounded w-1/3"></div>
-                    </div>
-                  </div>
-                </div>
-              ))}
+          <div className="space-y-8">
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-blue flex items-center justify-center text-white font-bold">
+                1
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Registration Opens</h3>
+                <p className="text-gray-600">Sign up and join our community Discord server. Get ready to meet your teammates!</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">Now - February 15th</p>
+              </div>
             </div>
-          ) : error ? (
-            <div className="text-center py-12">
-              <p className="text-red-500 mb-4">Failed to load templates</p>
-              <button 
-                onClick={() => window.location.reload()}
-                className="bg-airtable-blue text-white px-6 py-2 rounded-lg"
-              >
-                Try Again
-              </button>
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-pink flex items-center justify-center text-white font-bold">
+                2
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Kickoff Event</h3>
+                <p className="text-gray-600">Virtual kickoff with workshop, Q&A, and challenge announcement. Hacking begins!</p>
+                <p className="text-sm text-airtable-pink font-medium mt-2">February 16th, 10:00 AM EST</p>
+              </div>
             </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredTemplates && filteredTemplates.length > 0 ? (
-                filteredTemplates.map((template) => (
-                  <TemplateCard 
-                    key={template.id} 
-                    template={template}
-                  />
-                ))
-              ) : (
-                <div className="col-span-3 text-center py-12">
-                  <p className="text-gray-500">
-                    {selectedCategory 
-                      ? `No templates found in the "${selectedCategory}" category.` 
-                      : "No published templates available at this time."}
-                  </p>
-                </div>
-              )}
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-yellow flex items-center justify-center text-white font-bold">
+                3
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">48-Hour Hack</h3>
+                <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
+                <p className="text-sm text-airtable-yellow font-medium mt-2">February 16-18th</p>
+              </div>
             </div>
-          )}
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-blue flex items-center justify-center text-white font-bold">
+                4
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Submissions & Demo Day</h3>
+                <p className="text-gray-600">Submit your project and present to judges. Winners announced live!</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">February 18th, 6:00 PM EST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Prizes Section */}
+      <section className="py-20 px-6 md:px-12 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Prizes & Awards</h2>
+          <p className="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+            Over $10,000 in prizes and swag for winners across multiple categories!
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="border-2 border-airtable-blue bg-gradient-to-br from-airtable-blue/5 to-transparent">
+              <CardHeader className="text-center">
+                <Trophy className="h-16 w-16 text-airtable-blue mx-auto mb-4" />
+                <CardTitle className="text-2xl">🥇 Grand Prize</CardTitle>
+                <CardDescription className="text-xl font-bold text-airtable-blue mt-2">$3,000</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-center text-gray-600">Best overall project</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-airtable-pink bg-gradient-to-br from-airtable-pink/5 to-transparent">
+              <CardHeader className="text-center">
+                <Gift className="h-16 w-16 text-airtable-pink mx-auto mb-4" />
+                <CardTitle className="text-2xl">🥈 Runner Up</CardTitle>
+                <CardDescription className="text-xl font-bold text-airtable-pink mt-2">$2,000</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-center text-gray-600">Second place winner</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-airtable-yellow bg-gradient-to-br from-airtable-yellow/5 to-transparent">
+              <CardHeader className="text-center">
+                <Zap className="h-16 w-16 text-airtable-yellow mx-auto mb-4" />
+                <CardTitle className="text-2xl">🥉 Third Place</CardTitle>
+                <CardDescription className="text-xl font-bold text-airtable-yellow mt-2">$1,000</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-center text-gray-600">Third place winner</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <p className="text-center text-gray-600 mt-12">
+            Plus special category prizes for Best Design, Most Innovative, and Community Favorite!
+          </p>
+        </div>
+      </section>
+      
+      {/* Registration Form */}
+      <section id="browse-templates" className="py-20 px-6 md:px-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Register Now</h2>
+          <p className="text-lg text-gray-600 text-center mb-12">
+            Secure your spot in the first Airtable Community Led Hackathon!
+          </p>
+          
+          <div className="bg-white rounded-2xl shadow-card overflow-hidden">
+            <iframe 
+              className="airtable-embed w-full" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/paggcOIRyaIdjOLkY/form" 
+              frameBorder="0" 
+              width="100%" 
+              height="533" 
+              style={{ background: 'transparent', border: '1px solid #ccc' }}
+            />
+          </div>
         </div>
       </section>
       
