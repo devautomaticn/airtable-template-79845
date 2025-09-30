@@ -11,8 +11,29 @@ const Index = () => {
       <Navbar />
       <Hero />
       
+      {/* Registration Form */}
+      <section id="browse-templates" className="py-20 px-6 md:px-12 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Register Now</h2>
+          <p className="text-lg text-gray-600 text-center mb-12">
+            Secure your spot in the first Airtable Community Led Hackathon!
+          </p>
+          
+          <div className="bg-white rounded-2xl shadow-card overflow-hidden">
+            <iframe 
+              className="airtable-embed w-full" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/paggcOIRyaIdjOLkY/form" 
+              frameBorder="0" 
+              width="100%" 
+              height="533" 
+              style={{ background: 'transparent', border: '1px solid #ccc' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section id="hackathon-details" className="py-20 px-6 md:px-12 bg-white">
+      <section id="hackathon-details" className="py-20 px-6 md:px-12 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Why Join the Hackathon?</h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">
@@ -49,7 +70,7 @@ const Index = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 px-6 md:px-12 bg-gray-50">
+      <section className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Event Timeline</h2>
           
@@ -97,27 +118,6 @@ const Index = () => {
                 <p className="text-sm text-airtable-blue font-medium mt-2">Winners will be publicly announced</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Registration Form */}
-      <section id="browse-templates" className="py-20 px-6 md:px-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Register Now</h2>
-          <p className="text-lg text-gray-600 text-center mb-12">
-            Secure your spot in the first Airtable Community Led Hackathon!
-          </p>
-          
-          <div className="bg-white rounded-2xl shadow-card overflow-hidden">
-            <iframe 
-              className="airtable-embed w-full" 
-              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/paggcOIRyaIdjOLkY/form" 
-              frameBorder="0" 
-              width="100%" 
-              height="533" 
-              style={{ background: 'transparent', border: '1px solid #ccc' }}
-            />
           </div>
         </div>
       </section>
