@@ -1,8 +1,11 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import avatar1 from '@/assets/avatar-1.png';
+import avatar2 from '@/assets/avatar-2.png';
+import avatar3 from '@/assets/avatar-3.png';
+import avatar4 from '@/assets/avatar-4.png';
 
 const Hero = () => {
   const scrollToTemplates = () => {
@@ -54,10 +57,10 @@ const Hero = () => {
           
           <div className="flex items-center mt-12">
             <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map(i => (
+              {[avatar1, avatar2, avatar3, avatar4].map((avatar, i) => (
                 <div key={i} className="h-10 w-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center overflow-hidden">
                   <img 
-                    src={`https://i.pravatar.cc/100?img=${i+10}`} 
+                    src={avatar} 
                     alt="Participant avatar" 
                     className="h-full w-full object-cover"
                   />
