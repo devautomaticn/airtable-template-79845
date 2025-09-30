@@ -65,7 +65,7 @@ const Hero = () => {
               ))}
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-900">200+ Registered</p>
+              <p className="text-sm font-medium text-gray-900">Ongoing Registrations</p>
               <p className="text-xs text-gray-500">Join the community</p>
             </div>
           </div>

@@ -24,8 +24,8 @@ const Index = () => {
             <Card className="border-airtable-blue/20 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Trophy className="h-10 w-10 text-airtable-blue mb-2" />
-                <CardTitle>Amazing Prizes</CardTitle>
-                <CardDescription>Win cash prizes, swag, and exclusive opportunities</CardDescription>
+                <CardTitle>Fun Prizes</CardTitle>
+                <CardDescription>Exciting rewards for outstanding projects</CardDescription>
               </CardHeader>
             </Card>
 
@@ -61,7 +61,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Registration Opens</h3>
                 <p className="text-gray-600">Sign up and join our community Discord server. Get ready to meet your teammates!</p>
-                <p className="text-sm text-airtable-blue font-medium mt-2">Now - February 15th</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">Now</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Kickoff Event</h3>
                 <p className="text-gray-600">Virtual kickoff with workshop, Q&A, and challenge announcement. Hacking begins!</p>
-                <p className="text-sm text-airtable-pink font-medium mt-2">February 16th, 10:00 AM EST</p>
+                <p className="text-sm text-airtable-pink font-medium mt-2">November - Stay tuned</p>
               </div>
             </div>
 
@@ -83,7 +83,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">48-Hour Hack</h3>
                 <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
-                <p className="text-sm text-airtable-yellow font-medium mt-2">February 16-18th</p>
+                <p className="text-sm text-airtable-yellow font-medium mt-2">November - Stay tuned</p>
               </div>
             </div>
 
@@ -92,9 +92,9 @@ const Index = () => {
                 4
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Submissions & Demo Day</h3>
-                <p className="text-gray-600">Submit your project and present to judges. Winners announced live!</p>
-                <p className="text-sm text-airtable-blue font-medium mt-2">February 18th, 6:00 PM EST</p>
+                <h3 className="text-xl font-bold mb-2">Submission and Show Off</h3>
+                <p className="text-gray-600">Submit your project and share it with the world to get your deserved upvotes!</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">Winners will be publicly announced</p>
               </div>
             </div>
           </div>
