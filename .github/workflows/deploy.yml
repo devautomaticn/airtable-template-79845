@@ -1,0 +1,58 @@
+# Nombre del Workflow que verás en la pestaña "Actions" de GitHub
+name: Deploy to GitHub Pages
+
+# Se ejecuta cada vez que haces un 'push' a la rama 'main'
+on:
+  push:
+    branches:
+      - main
+  # También te permite ejecutarlo manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+# Permisos necesarios para que el workflow pueda desplegar a GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Define un solo "job" o tarea llamada "deploy"
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Clona tu repositorio
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Configura Node.js para instalar dependencias
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Puedes ajustar la versión si es necesario
+
+      # 3. Instala las dependencias del proyecto (usa 'npm' o 'bun' según tu lockfile)
+      # Viendo que tienes un 'bun.lockb', usaremos 'bun'
+      - name: Install dependencies
+        run: npm install -g bun && bun install
+
+      # 4. Compila el proyecto
+      - name: Build
+        run: bun run build # Este comando ejecuta 'vite build' definido en tu package.json
+
+      # 5. Prepara los archivos compilados para subirlos a GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # 6. Sube los archivos compilados (que estarán en la carpeta 'dist')
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # Vite por defecto compila en una carpeta llamada 'dist'
+
+      # 7. Despliega los archivos a GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
