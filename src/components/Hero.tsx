@@ -6,6 +6,7 @@ import avatar1 from '@/assets/avatar-1.png';
 import avatar2 from '@/assets/avatar-2.png';
 import avatar3 from '@/assets/avatar-3.png';
 import avatar4 from '@/assets/avatar-4.png';
+import avatar5 from '@/assets/avatar-5.png';
 
 const Hero = () => {
   const scrollToTemplates = () => {
@@ -57,7 +58,7 @@ const Hero = () => {
           
           <div className="flex items-center mt-12">
             <div className="flex -space-x-2">
-              {[avatar1, avatar2, avatar3, avatar4].map((avatar, i) => (
+              {[avatar1, avatar2, avatar3, avatar4, avatar5].map((avatar, i) => (
                 <div key={i} className="h-10 w-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center overflow-hidden">
                   <img 
                     src={avatar} 
