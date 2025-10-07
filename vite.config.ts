@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
 
- base: "/airtable-template-79845/",
+ base: "/",
 
   
   server: {
