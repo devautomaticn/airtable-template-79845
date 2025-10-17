@@ -4,12 +4,70 @@ import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Trophy, Users, Zap, Gift, Code } from 'lucide-react';
+import alexImage from '@/assets/alex-mcdonnell.jpeg';
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <Hero />
+      
+      {/* Awards Section */}
+      <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            🏆 Three winners. 🙌
+          </h2>
+          
+          <div className="space-y-12">
+            {/* Airtable's Official Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-blue/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-blue">Airtable's Official Award — AI Focused</h3>
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <img 
+                  src={alexImage} 
+                  alt="Alex McDonnell" 
+                  className="w-32 h-32 rounded-2xl object-cover border-4 border-airtable-blue shadow-lg"
+                />
+                <p className="text-lg text-gray-700 flex-1">
+                  Alex McDonnell, Director of Product Marketing at Airtable, will be picking the base that best shows off Airtable's AI superpowers. 🤖
+                </p>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-300 my-8"></div>
+
+            {/* Basefluencer Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-pink/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-pink">Basefluencer Award</h3>
+              <p className="text-lg text-gray-700">
+                For the builder who make everyone go "wait, you built that in Airtable?!"<br/>
+                The most liked, submission takes it. 💥
+              </p>
+            </div>
+
+            <div className="border-t border-gray-300 my-8"></div>
+
+            {/* Grand Jury Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-yellow/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-yellow">Grand Jury Award</h3>
+              <p className="text-lg text-gray-700">
+                Top Airtable Agencies will join forces to crown the community's best overall build. 🧠
+              </p>
+            </div>
+
+            <div className="border-t border-gray-300 my-8"></div>
+
+            {/* Prizes */}
+            <div className="bg-gradient-to-r from-airtable-blue/10 via-airtable-pink/10 to-airtable-yellow/10 rounded-2xl p-8 text-center">
+              <h3 className="text-2xl font-bold mb-4">🎁 Prizes: Airtable swag for the winners.</h3>
+              <p className="text-gray-600">
+                To be eligible, winners must be located in North America, EMEA, or LatAm.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Registration Form */}
       <section id="browse-templates" className="py-20 px-6 md:px-12 bg-white">
