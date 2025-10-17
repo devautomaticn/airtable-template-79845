@@ -59,10 +59,15 @@ const Index = () => {
             <div className="border-t border-gray-300 my-8"></div>
 
             {/* Prizes */}
-            <div className="bg-gradient-to-r from-airtable-blue/10 via-airtable-pink/10 to-airtable-yellow/10 rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">🎁 Prizes: Airtable swag for the winners.</h3>
-              <p className="text-gray-600">
-                To be eligible, winners must be located in North America, EMEA, or LatAm.
+            <div className="bg-gradient-to-r from-airtable-blue/10 via-airtable-pink/10 to-airtable-yellow/10 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold mb-4">🎁 Prizes for the winners:</h3>
+              <ul className="space-y-2 text-lg text-gray-700 mb-4">
+                <li>- Airtable swag!!*</li>
+                <li>- Get featured on Airtable's Change Makers spotlight</li>
+                <li>- Get a free consultation session</li>
+              </ul>
+              <p className="text-sm text-gray-600 italic">
+                *To be eligible for swag, winners must be located in North America, EMEA, or Latin America.
               </p>
             </div>
           </div>
