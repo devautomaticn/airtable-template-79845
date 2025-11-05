@@ -154,26 +154,15 @@ const Index = () => {
                 2
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Kickoff Event</h3>
-                <p className="text-gray-600">Virtual kickoff with workshop, Q&A, and challenge announcement. Hacking begins!</p>
+                <h3 className="text-xl font-bold mb-2">48-Hour Hack: November 21 & 22</h3>
+                <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
                 <p className="text-sm text-airtable-pink font-medium mt-2">November - Stay tuned</p>
               </div>
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-yellow flex items-center justify-center text-white font-bold">
-                3
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">48-Hour Hack</h3>
-                <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
-                <p className="text-sm text-airtable-yellow font-medium mt-2">November - Stay tuned</p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-blue flex items-center justify-center text-white font-bold">
-                4
+                3
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Submission and Show Off</h3>
