@@ -30,7 +30,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg text-gray-600 mb-8 max-w-xl">
-            November 21 & 22. Join innovators, builders, and creators from around the world to push the boundaries 
+            Friday, November 21 & Saturday, November 22. Join innovators, builders, and creators from around the world to push the boundaries 
             of what's possible with Airtable. Build, learn, and win exciting rewards!
           </p>
           
