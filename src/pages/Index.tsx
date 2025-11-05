@@ -154,7 +154,7 @@ const Index = () => {
                 2
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">48-Hour Hack: Friday, November 21 & Saturday, November 22</h3>
+                <h3 className="text-xl font-bold mb-2">48-Hour Hack: November 21st & 22nd (Friday - Saturday)</h3>
                 <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
                 <p className="text-sm text-airtable-pink font-medium mt-2">November - Stay tuned</p>
               </div>
