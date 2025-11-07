@@ -61,6 +61,9 @@ const Navbar = () => {
           >
             Details
           </button>
+          <Link to="/weird-ideas" className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors">
+            Weird Ideas
+          </Link>
           <Button 
             onClick={scrollToTemplates}
             className="bg-airtable-pink hover:bg-airtable-pink/90 text-white border-none"
@@ -97,6 +100,13 @@ const Navbar = () => {
             >
               Details
             </button>
+            <Link 
+              to="/weird-ideas" 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2"
+            >
+              Weird Ideas
+            </Link>
             <button 
               onClick={() => {
                 scrollToTemplates();
