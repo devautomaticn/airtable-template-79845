@@ -30,6 +30,17 @@ const Navbar = () => {
     }
   };
 
+  const scrollToFAQ = () => {
+    if (location.pathname === '/') {
+      const faqSection = document.getElementById('faq-section');
+      if (faqSection) {
+        faqSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.location.href = '/#faq-section';
+    }
+  };
+
   return (
     <header className={cn(
       'fixed w-full top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-4 px-6 md:px-12',
@@ -51,12 +62,7 @@ const Navbar = () => {
             Home
           </Link>
           <button 
-            onClick={() => {
-              const faqSection = document.getElementById('faq-section');
-              if (faqSection) {
-                faqSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
+            onClick={scrollToFAQ}
             className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors"
           >
             FAQs
@@ -90,10 +96,7 @@ const Navbar = () => {
             </Link>
             <button 
               onClick={() => {
-                const faqSection = document.getElementById('faq-section');
-                if (faqSection) {
-                  faqSection.scrollIntoView({ behavior: 'smooth' });
-                }
+                scrollToFAQ();
                 setIsMobileMenuOpen(false);
               }}
               className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2 text-left"
