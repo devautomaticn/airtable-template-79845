@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Trophy, Users, Zap, Gift, Code } from 'lucide-react';
 import alexImage from '@/assets/alex-mcdonnell.jpeg';
 
@@ -129,6 +130,106 @@ const Index = () => {
               </CardHeader>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-6 md:px-12 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">🧠 FAQ — Airtable Hackathon 2025</h2>
+          
+          <Accordion type="single" collapsible className="w-full mt-12">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                When and where will this thing be happening?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                November 21 & 22, 2025 (Friday and Saturday).<br/>
+                It's fully online and async — so no excuses, you can join from anywhere!
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                But I'm no Airtable expert… can I still join?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                Of course! The hackathon is all about having fun, learning, and discovering cool new use cases. All skill levels are welcome — from total beginners to seasoned Airtable nerds.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                When are submissions due?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                November 22 at 11:59 PM EST.<br/>
+                Just make sure to hit that "submit" button before midnight! The submission form will be right here on this site.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                What do we need to submit?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                You'll need to fill out a short form with:
+                <ul className="list-disc ml-6 mt-2 space-y-1">
+                  <li>Participant name(s) & email(s)</li>
+                  <li>Project name</li>
+                  <li>Brief project description</li>
+                  <li>Short demo video (max 8 min — Loom, YouTube, or similar)</li>
+                </ul>
+                <p className="mt-2">You can also include a longer version if you want — just note that only the short one will be reviewed.</p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                Is this a solo or team event?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                Either! You can go solo or team up with friends. If it's a team project, include everyone's info on the form.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                Do we need to follow a specific theme?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                Nope! This edition is totally open — build whatever excites you.<br/>
+                Need inspo? Check out our Weird Airtable Ideas gallery for fun prompts.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                How will winners be chosen?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                There'll be three awards:
+                <ul className="list-disc ml-6 mt-2 space-y-1">
+                  <li><strong>Airtable's Official AI Award:</strong> Chosen by Alex McDonnell (Airtable's Director of Product Marketing) for the best use of Airtable's AI features.</li>
+                  <li><strong>Basefluencer Award:</strong> Goes to the demo that racks up the most YouTube likes.</li>
+                  <li><strong>Grand Jury Award:</strong> Picked by top Airtable agencies for best overall build.</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                What about prizes?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                Winners will score Airtable swag (available in North America, EMEA & LATAM), a feature in Airtable's Change Makers spotlight, and a free consultation session.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+
+          <p className="text-center text-lg text-gray-700 mt-12 font-medium">
+            Ready? Grab your snacks, open Airtable, and get ready for a 48-hour build-a-thon of creativity!
+          </p>
         </div>
       </section>
 
