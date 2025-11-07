@@ -52,14 +52,14 @@ const Navbar = () => {
           </Link>
           <button 
             onClick={() => {
-              const detailsSection = document.getElementById('hackathon-details');
-              if (detailsSection) {
-                detailsSection.scrollIntoView({ behavior: 'smooth' });
+              const faqSection = document.getElementById('faq-section');
+              if (faqSection) {
+                faqSection.scrollIntoView({ behavior: 'smooth' });
               }
             }}
             className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors"
           >
-            Details
+            FAQs
           </button>
           <Link to="/weird-ideas" className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors">
             Weird Ideas
@@ -90,15 +90,15 @@ const Navbar = () => {
             </Link>
             <button 
               onClick={() => {
-                const detailsSection = document.getElementById('hackathon-details');
-                if (detailsSection) {
-                  detailsSection.scrollIntoView({ behavior: 'smooth' });
+                const faqSection = document.getElementById('faq-section');
+                if (faqSection) {
+                  faqSection.scrollIntoView({ behavior: 'smooth' });
                 }
                 setIsMobileMenuOpen(false);
               }}
               className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2 text-left"
             >
-              Details
+              FAQs
             </button>
             <Link 
               to="/weird-ideas" 
