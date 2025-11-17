@@ -6,6 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Trophy, Users, Zap, Gift, Code } from 'lucide-react';
 import alexImage from '@/assets/alex-mcdonnell.jpeg';
+import benImage from '@/assets/ben-green.jpeg';
+import alliImage from '@/assets/alli-allosa.webp';
+import kamilleImage from '@/assets/kamille-parks.jpeg';
 
 const Index = () => {
   return (
@@ -52,9 +55,47 @@ const Index = () => {
             {/* Grand Jury Award */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-yellow/20">
               <h3 className="text-2xl font-bold mb-4 text-airtable-yellow">Grand Jury Award</h3>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 mb-6">
                 Top Airtable Agencies will join forces to crown the community's best overall build. 🧠
               </p>
+              
+              <div className="space-y-6">
+                {/* Alli Allosa */}
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <img 
+                    src={alliImage} 
+                    alt="Alli Allosa" 
+                    className="w-32 h-32 rounded-2xl object-cover border-4 border-airtable-yellow shadow-lg"
+                  />
+                  <p className="text-lg text-gray-700 flex-1">
+                    <strong>Alli Allosa:</strong> Leading industry expert with thousands of hours experience helping individuals and teams both large and small.
+                  </p>
+                </div>
+
+                {/* Ben Green */}
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <img 
+                    src={benImage} 
+                    alt="Ben Green" 
+                    className="w-32 h-32 rounded-2xl object-cover border-4 border-airtable-yellow shadow-lg"
+                  />
+                  <p className="text-lg text-gray-700 flex-1">
+                    <strong>Ben Green:</strong> Co-founder of Optimize IS, Airtable's Partner of the Year for 2024 & 2025.
+                  </p>
+                </div>
+
+                {/* Kamille Parks */}
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <img 
+                    src={kamilleImage} 
+                    alt="Kamille Parks" 
+                    className="w-32 h-32 rounded-2xl object-cover border-4 border-airtable-yellow shadow-lg"
+                  />
+                  <p className="text-lg text-gray-700 flex-1">
+                    <strong>Kamille Parks:</strong> Airtable expert, a low-code developer, and podcast host dedicated to providing user-friendly solutions to clients!
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="border-t border-gray-300 my-8"></div>
