@@ -68,7 +68,7 @@ const Index = () => {
                     className="w-32 h-32 rounded-2xl object-cover border-4 border-airtable-yellow shadow-lg"
                   />
                   <p className="text-lg text-gray-700 flex-1">
-                    <strong>Alli Allosa:</strong> Leading industry expert with thousands of hours experience helping individuals and teams both large and small.
+                    <strong>Alli Allosa:</strong> Accomplished Airtable Consultant and leading industry expert with thousands of hours experience helping individuals and teams both large and small. Alli's favorite parts about Airtable Consulting are learning about different industries, building intuitive tools, and empowering users to enjoy their work.
                   </p>
                 </div>
 
