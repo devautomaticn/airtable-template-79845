@@ -39,7 +39,7 @@ const Hero = () => {
               className="bg-airtable-blue hover:bg-airtable-blue/90 text-white px-8 py-6 rounded-md text-base"
               onClick={scrollToTemplates}
             >
-              Register Now
+              Submit your Build
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button 
@@ -69,7 +69,7 @@ const Hero = () => {
               ))}
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-900">Ongoing Registrations</p>
+              <p className="text-sm font-medium text-gray-900">+100 Signups</p>
               <p className="text-xs text-gray-500">Join the community</p>
             </div>
           </div>
