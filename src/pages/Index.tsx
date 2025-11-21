@@ -16,6 +16,27 @@ const Index = () => {
       <Navbar />
       <Hero />
       
+      {/* Submission Form */}
+      <section id="browse-templates" className="py-20 px-6 md:px-12 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Submit your Build</h2>
+          <p className="text-lg text-gray-600 text-center mb-12">
+            Secure your spot in the first Airtable Community Led Hackathon!
+          </p>
+          
+          <div className="bg-white rounded-2xl shadow-card overflow-hidden">
+            <iframe 
+              className="airtable-embed w-full" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/pagUW1b1YYafjgYHp/form" 
+              frameBorder="0" 
+              width="100%" 
+              height="533" 
+              style={{ background: 'transparent', border: '1px solid #ccc' }}
+            />
+          </div>
+        </div>
+      </section>
+      
       {/* Awards Section */}
       <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -116,27 +137,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Registration Form */}
-      <section id="browse-templates" className="py-20 px-6 md:px-12 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Register Now</h2>
-          <p className="text-lg text-gray-600 text-center mb-12">
-            Secure your spot in the first Airtable Community Led Hackathon!
-          </p>
-          
-          <div className="bg-white rounded-2xl shadow-card overflow-hidden">
-            <iframe 
-              className="airtable-embed w-full" 
-              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/paggcOIRyaIdjOLkY/form" 
-              frameBorder="0" 
-              width="100%" 
-              height="533" 
-              style={{ background: 'transparent', border: '1px solid #ccc' }}
-            />
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section id="hackathon-details" className="py-20 px-6 md:px-12 bg-gray-50">
         <div className="max-w-7xl mx-auto">
