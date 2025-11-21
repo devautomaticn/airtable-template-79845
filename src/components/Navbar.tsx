@@ -74,7 +74,7 @@ const Navbar = () => {
             onClick={scrollToTemplates}
             className="bg-airtable-pink hover:bg-airtable-pink/90 text-white border-none"
           >
-            Register Now
+            Submit your Build
           </Button>
         </nav>
 
@@ -117,7 +117,7 @@ const Navbar = () => {
               }}
               className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2 text-left"
             >
-              Register Now
+              Submit your Build
             </button>
           </nav>
         </div>
