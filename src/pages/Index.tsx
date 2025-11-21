@@ -30,7 +30,7 @@ const Index = () => {
               src="https://airtable.com/embed/appdPfhaKZFhHNvoT/pagUW1b1YYafjgYHp/form" 
               frameBorder="0" 
               width="100%" 
-              height="533" 
+              height="1620" 
               style={{ background: 'transparent', border: '1px solid #ccc' }}
             />
           </div>
