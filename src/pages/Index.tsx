@@ -19,19 +19,18 @@ const Index = () => {
       {/* Submission Form */}
       <section id="browse-templates" className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Submit your Build</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">2025 Submissions</h2>
           <p className="text-lg text-gray-600 text-center mb-12">
-            Not registered yet? No worries — new participants are welcome.<br/>
-            Submissions are due 23:59 EST.
+            Check out submissions for our 2025 edition. Make sure spread the word, and like your favorite builds! The most liked video will win our Basefluencer Award.
           </p>
           
           <div className="bg-white rounded-2xl shadow-card overflow-hidden">
             <iframe 
               className="airtable-embed w-full" 
-              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/pagUW1b1YYafjgYHp/form" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/shrAVc8PRlPjGa2Jv" 
               frameBorder="0" 
               width="100%" 
-              height="1620" 
+              height="900" 
               style={{ background: 'transparent', border: '1px solid #ccc' }}
             />
           </div>
