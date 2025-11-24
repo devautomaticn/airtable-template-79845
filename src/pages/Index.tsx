@@ -21,7 +21,8 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">2025 Submissions</h2>
           <p className="text-lg text-gray-600 text-center mb-12">
-            Check out submissions for our 2025 edition. Make sure spread the word, and like your favorite builds! The most liked video will win our Basefluencer Award.
+            Check out submissions for our 2025 edition. Winners will be announced on Wednesday, November 26.<br/><br/>
+            Make sure spread the word, and like your favorite builds! The most liked video will win our Basefluencer Award.
           </p>
           
           <div className="bg-white rounded-2xl shadow-card overflow-hidden">
