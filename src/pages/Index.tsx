@@ -38,8 +38,24 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Awards Section */}
+      {/* 2025 Winners Section */}
       <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            🏆 Our 2025 Winners
+          </h2>
+          
+          <div className="space-y-12">
+            {/* Airtable's Official Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-blue/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-blue">Airtable's Official Award — AI Focused</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Awards Section */}
+      <section className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             🏆 Three Awards. 🙌
