@@ -16,6 +16,41 @@ const Index = () => {
       <Navbar />
       <Hero />
       
+      {/* 2025 Winners Section */}
+      <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            🏆 Our 2025 Winners
+          </h2>
+          
+          <div className="space-y-8">
+            {/* Airtable's Official Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-blue/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-blue">Airtable&apos;s Official Award — AI Focused:</h3>
+              <p className="text-lg text-gray-700">
+                My Dodgeball Hub — by Erica Pascual (<a href="https://www.youtube.com/watch?v=VLczewfGwEo&t=124s" target="_blank" rel="noopener noreferrer" className="text-airtable-blue hover:underline font-medium">check it out</a>)
+              </p>
+            </div>
+
+            {/* Basefluencer Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-pink/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-pink">Basefluencer Award:</h3>
+              <p className="text-lg text-gray-700">
+                My Dodgeball Hub — by Erica Pascual (<a href="https://www.youtube.com/watch?v=VLczewfGwEo&t=124s" target="_blank" rel="noopener noreferrer" className="text-airtable-pink hover:underline font-medium">check it out</a>)
+              </p>
+            </div>
+
+            {/* Grand Jury Award */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-yellow/20">
+              <h3 className="text-2xl font-bold mb-4 text-airtable-yellow">Grand Jury Award:</h3>
+              <p className="text-lg text-gray-700">
+                Benefit Bridge — by Alec Beckham & Katie Hilbert (<a href="https://www.youtube.com/watch?v=btKx2Y1c_BI&t=78s" target="_blank" rel="noopener noreferrer" className="text-airtable-yellow hover:underline font-medium">check it out</a>)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Submission Form */}
       <section id="browse-templates" className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -38,24 +73,8 @@ const Index = () => {
         </div>
       </section>
       
-      {/* 2025 Winners Section */}
-      <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            🏆 Our 2025 Winners
-          </h2>
-          
-          <div className="space-y-12">
-            {/* Airtable's Official Award */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-airtable-blue/20">
-              <h3 className="text-2xl font-bold mb-4 text-airtable-blue">Airtable's Official Award — AI Focused</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       {/* Awards Section */}
-      <section className="py-20 px-6 md:px-12 bg-white">
+      <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             🏆 Three Awards. 🙌
