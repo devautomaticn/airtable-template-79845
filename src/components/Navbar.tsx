@@ -2,8 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,17 +24,6 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const scrollToTemplates = () => {
-    if (location.pathname === '/') {
-      const templatesSection = document.getElementById('browse-templates');
-      if (templatesSection) {
-        templatesSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.location.href = '/#browse-templates';
-    }
-  };
 
   const scrollToFAQ = () => {
     if (location.pathname === '/') {
@@ -70,12 +65,28 @@ const Navbar = () => {
           <Link to="/weird-ideas" className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors">
             Weird Ideas
           </Link>
-          <Button 
-            onClick={scrollToTemplates}
-            className="bg-airtable-pink hover:bg-airtable-pink/90 text-white border-none"
-          >
-            Check Out Submissions
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button 
+                className="bg-airtable-pink hover:bg-airtable-pink/90 text-white border-none"
+              >
+                Check Out Submissions
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg z-50">
+              <DropdownMenuItem asChild>
+                <Link to="/march-2026" className="cursor-pointer">
+                  March 2026
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/november-2025" className="cursor-pointer">
+                  November 2025
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -110,15 +121,23 @@ const Navbar = () => {
             >
               Weird Ideas
             </Link>
-            <button 
-              onClick={() => {
-                scrollToTemplates();
-                setIsMobileMenuOpen(false);
-              }}
-              className="text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2 text-left"
-            >
-              Check Out Submissions
-            </button>
+            <div className="border-t border-gray-200 pt-4">
+              <p className="text-xs font-semibold text-gray-500 uppercase mb-2">Submissions</p>
+              <Link 
+                to="/march-2026" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2"
+              >
+                March 2026
+              </Link>
+              <Link 
+                to="/november-2025" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-sm font-medium text-gray-700 hover:text-airtable-blue transition-colors py-2"
+              >
+                November 2025
+              </Link>
+            </div>
           </nav>
         </div>
       )}

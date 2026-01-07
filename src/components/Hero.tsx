@@ -9,10 +9,10 @@ import avatar4 from '@/assets/avatar-4.png';
 import avatar5 from '@/assets/avatar-5.png';
 
 const Hero = () => {
-  const scrollToTemplates = () => {
-    const templatesSection = document.getElementById('browse-templates');
-    if (templatesSection) {
-      templatesSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSignup = () => {
+    const signupSection = document.getElementById('signup-section');
+    if (signupSection) {
+      signupSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -30,16 +30,16 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg text-gray-600 mb-8 max-w-xl">
-            November 21st & 22nd (Friday - Saturday). Join innovators, builders, and creators from around the world to push the boundaries 
+            March 2026. Join innovators, builders, and creators from around the world to push the boundaries 
             of what's possible with Airtable. Build, learn, and win exciting rewards!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               className="bg-airtable-blue hover:bg-airtable-blue/90 text-white px-8 py-6 rounded-md text-base"
-              onClick={scrollToTemplates}
+              onClick={scrollToSignup}
             >
-              Check Out Submissions
+              Sign Up NOW
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button 
