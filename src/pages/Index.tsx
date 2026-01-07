@@ -73,7 +73,7 @@ const Index = () => {
       {/* FAQ Section */}
       <section id="faq-section" className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">🧠 FAQ — Airtable Hackathon 2025</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">🧠 FAQ — Airtable Hackathon 2026</h2>
           
           <Accordion type="single" collapsible className="w-full mt-12">
             <AccordionItem value="item-1">
@@ -81,7 +81,7 @@ const Index = () => {
                 When and where will this thing be happening?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                November 21 & 22, 2025 (Friday and Saturday).<br/>
+                March 2026.<br/>
                 It's fully online and async — so no excuses, you can join from anywhere!
               </AccordionContent>
             </AccordionItem>
@@ -100,8 +100,8 @@ const Index = () => {
                 When are submissions due?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                November 22 at 11:59 PM EST.<br/>
-                Just make sure to hit that "submit" button before midnight! The submission form will be right here on this site.
+                March 2026.<br/>
+                Just make sure to hit that "submit" button before the deadline! The submission form will be right here on this site.
               </AccordionContent>
             </AccordionItem>
 
@@ -135,7 +135,7 @@ const Index = () => {
                 Do we need to follow a specific theme?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                Nope! This edition is totally open — build whatever excites you.<br/>
+                Yes! Updates on this matter to follow shortly.<br/>
                 Need inspo? Check out our Weird Airtable Ideas gallery for fun prompts.
               </AccordionContent>
             </AccordionItem>
@@ -192,7 +192,7 @@ const Index = () => {
                 2
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">48-Hour Hack: November 21st & 22nd (Friday - Saturday)</h3>
+                <h3 className="text-xl font-bold mb-2">48-Hour Hack: March 2026</h3>
                 <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
                 <p className="text-sm text-airtable-pink font-medium mt-2">November - Stay tuned</p>
               </div>
