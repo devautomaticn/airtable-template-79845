@@ -55,6 +55,7 @@ export default {
 				},
 				airtable: {
 					pink: '#F82B60',
+					red: '#EF4444',
 					yellow: '#FCB401',
 					blue: '#19C0FF',
 					black: '#222222',
