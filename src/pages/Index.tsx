@@ -81,7 +81,7 @@ const Index = () => {
                 When and where will this thing be happening?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                Participants can start building as from signup. Submissions are due March 23, 2026.<br/>
+                Participants can start building as from signup. Submissions are due March 27, 2026.<br/>
                 It's fully online and async — so no excuses, you can join from anywhere!
               </AccordionContent>
             </AccordionItem>
@@ -100,7 +100,7 @@ const Index = () => {
                 When are submissions due?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                March 23, 2026.<br/>
+                March 27, 2026.<br/>
                 Just make sure to hit that "submit" button before the deadline! The submission form will be right here on this site.
               </AccordionContent>
             </AccordionItem>
@@ -177,18 +177,18 @@ const Index = () => {
           
           <div className="space-y-8">
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-blue flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-yellow flex items-center justify-center text-white font-bold">
                 1
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Registrations are OPEN</h3>
                 <p className="text-gray-600">Sign up and receive all details. Get ready to Hack!</p>
-                <p className="text-sm text-airtable-blue font-medium mt-2">Now</p>
+                <p className="text-sm text-airtable-yellow font-medium mt-2">Now</p>
               </div>
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-pink flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-red flex items-center justify-center text-white font-bold">
                 2
               </div>
               <div>
@@ -198,18 +198,18 @@ const Index = () => {
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-yellow flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-blue flex items-center justify-center text-white font-bold">
                 3
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Submission</h3>
                 <p className="text-gray-600">Submit your project before the deadline.</p>
-                <p className="text-sm text-airtable-yellow font-medium mt-2">Due: March 23, 2026</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">Due: March 27, 2026</p>
               </div>
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-pink flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-yellow flex items-center justify-center text-white font-bold">
                 4
               </div>
               <div>
@@ -219,13 +219,13 @@ const Index = () => {
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-yellow flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-red flex items-center justify-center text-white font-bold">
                 5
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Winners Announced</h3>
                 <p className="text-gray-600">The winners will be announced and celebrated!</p>
-                <p className="text-sm text-airtable-yellow font-medium mt-2">March 30, 2026</p>
+                <p className="text-sm text-airtable-red font-medium mt-2">March 30, 2026</p>
               </div>
             </div>
           </div>
