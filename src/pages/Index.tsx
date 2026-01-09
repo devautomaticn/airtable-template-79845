@@ -181,7 +181,7 @@ const Index = () => {
                 1
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Registration Opens</h3>
+                <h3 className="text-xl font-bold mb-2">Registrations are OPEN</h3>
                 <p className="text-gray-600">Sign up and receive all details. Get ready to Hack!</p>
                 <p className="text-sm text-airtable-blue font-medium mt-2">Now</p>
               </div>
@@ -192,9 +192,8 @@ const Index = () => {
                 2
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">48-Hour Hack: March 2026</h3>
-                <p className="text-gray-600">Build your project! Office hours, mentorship, and support available throughout.</p>
-                <p className="text-sm text-airtable-pink font-medium mt-2">November - Stay tuned</p>
+                <h3 className="text-xl font-bold mb-2">Builder Mode: ON</h3>
+                <p className="text-gray-600">Once registered, you can start working on your buildout. Get creative and build something amazing!</p>
               </div>
             </div>
 
@@ -203,9 +202,30 @@ const Index = () => {
                 3
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Submission and Show Off</h3>
-                <p className="text-gray-600">Submit your project and share it with the world to get your deserved upvotes!</p>
-                <p className="text-sm text-airtable-blue font-medium mt-2">Winners will be publicly announced</p>
+                <h3 className="text-xl font-bold mb-2">Submission</h3>
+                <p className="text-gray-600">Submit your project before the deadline.</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">Due: March 17, 2026</p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-pink flex items-center justify-center text-white font-bold">
+                4
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Show Off</h3>
+                <p className="text-gray-600">Share your demo and celebrate all participants!</p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-airtable-blue flex items-center justify-center text-white font-bold">
+                5
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Winners Announced</h3>
+                <p className="text-gray-600">The winners will be announced and celebrated!</p>
+                <p className="text-sm text-airtable-blue font-medium mt-2">March 23, 2026</p>
               </div>
             </div>
           </div>
