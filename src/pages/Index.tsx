@@ -81,7 +81,7 @@ const Index = () => {
                 When and where will this thing be happening?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                Participants can start building as from signup. Submissions are due March 17, 2026.<br/>
+                Participants can start building as from March 1st, 2026. Submissions are due March 17, 2026.<br/>
                 It's fully online and async — so no excuses, you can join from anywhere!
               </AccordionContent>
             </AccordionItem>
@@ -193,7 +193,7 @@ const Index = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Builder Mode: ON</h3>
-                <p className="text-gray-600">Once registered, you can start working on your buildout. Get creative and build something amazing!</p>
+                <p className="text-gray-600">You can start working on your buildout as from March 1, 2026. Get creative and build something amazing!</p>
               </div>
             </div>
 
@@ -225,7 +225,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Winners Announced</h3>
                 <p className="text-gray-600">The winners will be announced and celebrated!</p>
-                <p className="text-sm text-airtable-red font-medium mt-2">March 30, 2026</p>
+                <p className="text-sm text-airtable-red font-medium mt-2">March 23, 2026</p>
               </div>
             </div>
           </div>
