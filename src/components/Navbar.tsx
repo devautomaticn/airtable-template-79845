@@ -48,7 +48,7 @@ const Navbar = () => {
             <div className="absolute bottom-0 left-0 h-4 w-4 bg-airtable-pink rounded-sm" />
             <div className="absolute bottom-0 right-0 h-4 w-4 bg-airtable-blue rounded-sm" />
           </div>
-          <span className="font-bold text-xl text-airtable-black">Airtable Template</span>
+          <span className="font-bold text-xl text-airtable-black">AT Hackathon</span>
         </Link>
 
         {/* Desktop Navigation */}

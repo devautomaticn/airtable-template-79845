@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="lg:w-1/2 pt-12 lg:pt-20 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-airtable-black leading-tight tracking-tight mb-6">
-            The First <span className="text-airtable-blue">Airtable</span> Community Led Hackathon!
+            The First <span className="text-airtable-blue">Airtable Community</span> Led Hackathon!
           </h1>
           
           <p className="text-lg text-gray-600 mb-8 max-w-xl">
