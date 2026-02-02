@@ -83,7 +83,7 @@ const Hero = () => {
               className="rounded-xl w-full h-auto object-cover"
             />
             <div className="absolute top-6 right-6 bg-airtable-pink text-white text-xs font-bold px-3 py-1 rounded-full">
-              48h Challenge
+              March 2026
             </div>
             <div className="absolute top-6 left-6 bg-airtable-blue text-white text-xs font-bold px-3 py-1 rounded-full">
               Build & Win
