@@ -173,11 +173,6 @@ const Index = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-
-
-          <p className="text-center text-lg text-gray-700 mt-12 font-medium">
-            Ready? Grab your snacks, open Airtable, and get ready for a 48-hour build-a-thon of creativity!
-          </p>
         </div>
       </section>
 
