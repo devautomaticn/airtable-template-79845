@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="absolute bottom-0 left-0 h-3.5 w-3.5 bg-airtable-pink rounded-sm" />
                 <div className="absolute bottom-0 right-0 h-3.5 w-3.5 bg-airtable-blue rounded-sm" />
               </div>
-              <span className="font-bold text-lg text-airtable-black">Airtable Template</span>
+              <span className="font-bold text-lg text-airtable-black">AT Hackathon</span>
             </div>
             <p className="text-gray-600 text-sm mb-6 max-w-md">
               Join innovators, builders, and creators from around the world to push the boundaries of what's possible with Airtable. Build, learn, and win exciting rewards!
@@ -23,7 +23,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Airtable Template. All rights reserved.
+            &copy; {new Date().getFullYear()} Automatic Nation. All rights reserved.
           </p>
         </div>
       </div>

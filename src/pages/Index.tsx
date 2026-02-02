@@ -162,7 +162,18 @@ const Index = () => {
                 Winners will score Airtable swag (available in North America, EMEA & LATAM), a feature in Airtable's Change Makers spotlight, and a free consultation session.
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="item-9">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                Who is running the event?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                The Hackathon is exclusively organized by community members. Airtable is not running or sponsoring the event.
+                <p className="mt-2">If you'd like to help out as a volunteer, feel free to email <a href="mailto:mike@automaticnation.com" className="text-airtable-blue hover:underline">mike@automaticnation.com</a>.</p>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
+
 
           <p className="text-center text-lg text-gray-700 mt-12 font-medium">
             Ready? Grab your snacks, open Airtable, and get ready for a 48-hour build-a-thon of creativity!
