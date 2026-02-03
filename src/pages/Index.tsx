@@ -135,8 +135,11 @@ const Index = () => {
                 Do we need to follow a specific theme?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 text-base">
-                Yes! Updates on this matter to follow shortly.<br/>
-                Need inspo? Check out our Weird Airtable Ideas gallery for fun prompts.
+                This edition's theme is.... <strong>"Let's Play 🎲"</strong>
+                <p className="mt-3">What happens when you mix Airtable, creativity, and a bit of mischief?</p>
+                <p className="mt-2 font-semibold">A game.</p>
+                <p className="mt-3">Board game, trivia, RPG, simulation, puzzle, management game... anything goes.</p>
+                <p className="mt-2">If someone can play it, you're on the right track.</p>
               </AccordionContent>
             </AccordionItem>
 
