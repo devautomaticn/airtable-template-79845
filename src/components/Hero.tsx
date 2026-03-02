@@ -39,7 +39,7 @@ const Hero = () => {
               className="bg-airtable-blue hover:bg-airtable-blue/90 text-white px-8 py-6 rounded-md text-base"
               onClick={scrollToSignup}
             >
-              Sign Up NOW
+              Submit NOW!
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button 
