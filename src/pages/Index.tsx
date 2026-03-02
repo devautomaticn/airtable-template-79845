@@ -76,6 +76,16 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">🧠 FAQ — Airtable Hackathon 2026</h2>
           
           <Accordion type="single" collapsible className="w-full mt-12">
+            <AccordionItem value="item-9">
+              <AccordionTrigger className="text-left text-lg font-semibold">
+                Who is running the event?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 text-base">
+                The Hackathon is exclusively organized by community members. Airtable is not running or sponsoring the event.
+                <p className="mt-2">If you'd like to help out as a volunteer, feel free to email <a href="mailto:mike@automaticnation.com" className="text-airtable-blue hover:underline">mike@automaticnation.com</a>.</p>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-left text-lg font-semibold">
                 When and where will this thing be happening?
@@ -166,15 +176,6 @@ const Index = () => {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-9">
-              <AccordionTrigger className="text-left text-lg font-semibold">
-                Who is running the event?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base">
-                The Hackathon is exclusively organized by community members. Airtable is not running or sponsoring the event.
-                <p className="mt-2">If you'd like to help out as a volunteer, feel free to email <a href="mailto:mike@automaticnation.com" className="text-airtable-blue hover:underline">mike@automaticnation.com</a>.</p>
-              </AccordionContent>
-            </AccordionItem>
           </Accordion>
         </div>
       </section>
