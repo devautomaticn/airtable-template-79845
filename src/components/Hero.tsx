@@ -26,12 +26,14 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="lg:w-1/2 pt-12 lg:pt-20 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-airtable-black leading-tight tracking-tight mb-6">
-            The First <span className="text-airtable-blue">Airtable Community</span> Led Hackathon!
+            An <span className="text-airtable-blue">Airtable Community</span> Led Hackathon
           </h1>
           
-          <p className="text-lg text-gray-600 mb-8 max-w-xl">
-            March 2026. Join innovators, builders, and creators from around the world to push the boundaries 
-            of what's possible with Airtable. Build, learn, and win exciting rewards!
+          <p className="text-lg text-gray-600 mb-4 max-w-xl">
+            Submissions are now open: March 1 - March 17, 2026. For this edition, build the most fun Airtable game you can come up with! Build, learn, and win exciting rewards!
+          </p>
+          <p className="text-sm text-gray-500 mb-8 max-w-xl">
+            On a different note: Hungry for some in-person building? Join the Airtable team in New York City on March 19 for the first ever Airtable Buildathon with over $100k in prizes up for grabs!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
