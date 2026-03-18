@@ -23,10 +23,10 @@ const Index = () => {
           <div className="bg-white rounded-2xl shadow-card overflow-hidden">
             <iframe 
               className="airtable-embed w-full" 
-              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/pagUW1b1YYafjgYHp/form" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/shrl6wrRuDBA2VDcf" 
               frameBorder="0" 
               width="100%" 
-              height="1500" 
+              height="1000" 
               style={{ background: 'transparent', border: '1px solid #ccc' }}
             />
           </div>
