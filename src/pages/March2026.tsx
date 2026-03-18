@@ -7,22 +7,22 @@ const March2026 = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      {/* Coming Soon Section */}
-      <section className="flex-1 flex items-center justify-center px-6 md:px-12 pt-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
-            <span className="text-6xl">🚀</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-airtable-blue via-airtable-pink to-airtable-yellow bg-clip-text text-transparent">
-            Coming Soon
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            The March 2026 Hackathon is in the works! Stay tuned for exciting announcements.
+      <section className="flex-1 px-6 md:px-12 pt-32 pb-20">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">March 2026 Submissions!</h1>
+          <p className="text-lg text-gray-600 text-center mb-12">
+            Help participants win the Basefulencer award by liking your most favorite submissions on Youtube!
           </p>
-          <div className="bg-gradient-to-r from-airtable-blue/10 via-airtable-pink/10 to-airtable-yellow/10 rounded-2xl p-8 inline-block">
-            <p className="text-lg font-medium text-gray-700">
-              Sign up on our homepage to be notified when registration opens!
-            </p>
+          
+          <div className="bg-white rounded-2xl shadow-card overflow-hidden">
+            <iframe 
+              className="airtable-embed w-full" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/shrl6wrRuDBA2VDcf" 
+              frameBorder="0" 
+              width="100%" 
+              height="1000" 
+              style={{ background: 'transparent', border: '1px solid #ccc' }}
+            />
           </div>
         </div>
       </section>

@@ -15,18 +15,18 @@ const Index = () => {
       {/* Sign Up Section */}
       <section id="signup-section" className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Submit your GAME!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">March 2026 Submissions!</h2>
           <p className="text-lg text-gray-600 text-center mb-12">
-            Submissions are open March 1 - March 17, 2026
+            Help participants win the Basefulencer award by liking your most favorite submissions on Youtube!
           </p>
           
           <div className="bg-white rounded-2xl shadow-card overflow-hidden">
             <iframe 
               className="airtable-embed w-full" 
-              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/pagUW1b1YYafjgYHp/form" 
+              src="https://airtable.com/embed/appdPfhaKZFhHNvoT/shrl6wrRuDBA2VDcf" 
               frameBorder="0" 
               width="100%" 
-              height="1500" 
+              height="1000" 
               style={{ background: 'transparent', border: '1px solid #ccc' }}
             />
           </div>
